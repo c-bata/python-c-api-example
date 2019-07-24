@@ -1,0 +1,5 @@
+cyfibonacci.c
+*.so
+*.html
+*.egg-info
+build/
