@@ -4,9 +4,9 @@ from Cython.Build import cythonize
 setup(
     name='fibonacci',
     ext_modules=cythonize([
-        Extension('cyfibonacci', ['cyfibonacci.pyx'],
-                  extra_compile_args=["-g"],
+        Extension('cyfibonacci', ['cyfibonacci.pyx']),
+        Extension('fibonacci', ['fibonacci.c'],
+                  extra_compile_args=["-g", "-O0"],
                   extra_link_args=["-g"]),
-        Extension('fibonacci', ['fibonacci.c']),
     ], gdb_debug=True)
 )
