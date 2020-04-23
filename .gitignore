@@ -3,3 +3,4 @@ cyfibonacci.c
 *.html
 *.egg-info
 build/
+cython_debug/
