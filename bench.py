@@ -2,6 +2,7 @@ import time
 import fibonacci
 import pyfibonacci
 import cyfibonacci
+import myfibonacci
 
 from concurrent.futures import ThreadPoolExecutor, wait
 
@@ -30,6 +31,9 @@ def main():
 
     print("Cython")
     bench(cyfibonacci.fibonacci, n)
+
+    print("Mypyc")
+    bench(myfibonacci.fibonacci, n)
 
 
 if __name__ == '__main__':
